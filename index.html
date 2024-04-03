@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="development.css" />
+        </head>    
+
+
+<div class="header">
+  <h1>Development Project</h1>
+</div>
+
+<div class="content">
+
+    <p> The following project encouraged me to develop two sets of skills: the first, 
+        practicing comparative analysis by comparing the design of competitor websites. 
+        The second, creating functional aggregators using React in order to develop and 
+        practice frontend development.
+    </p>
+
+<h2><u>Part 1: Comparative Analysis</u></h2>
+  <p> I have recently started logging my recent media consumption: including movies on 
+    letterboxd and books on Goodreads, which I have found fun and enriching. However, 
+    Goodreads is not the only reading tracker application and several users have expressed 
+    that they wish to use websites with a better UI, not to mention websites that are not 
+    owned by Amazon. I found Goodreads’ lists and favorite function to be slightly clunky, 
+    so I decided to evaluate it among two competitor websites: Storygraph and LibraryThing. </p>
+
+    <p>
+        These websites function by using a plethora of ‘favorite’ functions and aggregators. 
+        They often have extensive tagging systems that can sometimes include automatic 
+        aggregators, such as ‘favorites’ and ‘to-read’. In the following chart, I am going 
+        to examine the differences between the aggregator systems and the way they display on the profile 
+        of the user: 
+    </p>
+
+    <table>
+        <tr>
+            <th></th>
+            <th><a href="https://www.goodreads.com/user/show/172237994-griller">Goodreads</a></th>
+            <th><a href="https://app.thestorygraph.com/profile/griller">Storygraph</a></th>
+            <th><a href="https://www.librarything.com/profile">LibraryThing</a></th>
+        </tr>
+        <tr>
+            <td>Naming System:</td>
+            <td>Calls aggregators “shelves”</td>
+            <td>Does not call all aggregators one thing, separates different lists from their tagging system</td>
+            <td>Calls aggregators “collections”</td>
+        </tr>
+        <tr>
+            <td>Automatically generates category systems:</td>
+            <td>Automatically generates ‘favorites’, ‘read’, ‘to-read’, and ‘currently-reading’ shelves for the user.</td>
+            <td>Automatically generates ‘Currently reading’, ‘Read Recently’, ‘Five Star Reads’, ‘To-Read Pile’ lists for the user.</td>
+            <td>Automatically generates ‘All collections’, ‘Your Library’, ‘Wishlist’, ‘Currently Reading’, ‘To Read’, “Read but unowned’, and ‘Favorites’ collections for the user.</td>
+        </tr>
+        <tr>
+            <td>Tag system:</td>
+            <td>No separate ‘tag’ system, shelves are meant to be used as tags.</td>
+            <td>Tag system is separate from the generated lists. Clicking a link on the user’s profile will take them to a separate ‘tags’ page.</td>
+            <td>Tag system is separate from the generated lists. Clicking a link on the user’s profile will take them to a separate ‘tags’ page. This page in turn displays both collections and tags.</td>
+        </tr>
+        <tr>
+            <td>Profile Page Layout:</td>
+            <td>Shelves are displayed prominently on one’s profile. Many other features are also displayed, giving an appearance of breadth over depth– the maximum amount of information is displayed without the need for scrolling. This is clearly an older website interface, designed for a computer instead of phone, and is supposed to mimic a library with its warm color palette.</td>
+            <td>The users lists are displayed in a manner designed for scrolling. This is a modern web app, with components clearly designed to fit better on a phone or tablet than a computer. One must scroll to the bottom of the profile in order to see one’s tagging system. The color palette is dark and minimal.</td>
+            <td>Extremely similar layout to Goodreads: designed for a computer with a warm color palette. The collections and tags are the first things displayed on the page. There is no need to scroll to obtain any of the information displayed on the page.</td>
+        </tr>
+    </table>
+
+    <h3>Findings:</h3>
+
+    <p>
+        I am interested in the specific favoriting system of the profile pages because it is a 
+        way of displaying a user’s personality and reading taste: how the aggregators can be used
+         for both organization and display. It was interesting to observe how each competitor 
+         website responded to a perceived lack in Goodreads’ customer satisfaction. I found that 
+         the factors across the websites that worked was Goodreads and LibraryThing’s horizontal 
+         profile layout. While not perfect and somewhat cluttered, I found this interface easier 
+         to navigate versus Storygraph’s web app scrolling interface. However, the fonts and simplistic 
+         nature of the Storygraph profile and tagging system are certainly easier on the user’s eyes.
+    </p>
+
+    <p>
+        I found the differences between the websites’ lists, collections, and tagging systems extremely complex 
+        and I imagine a lot of opinions will come down to the individual user. I found the idea of separating a 
+        tagging system from other, more general lists a useful system in theory, but I have issues with the way it 
+        is executed on both Storygraph and Librarything. It is not displayed prominently enough on Storygraph, and on 
+        LibraryThing, the interface uses lots of small text and visually complex icons, and simply looks outdated. 
+
+    </p>
+
+    <p>
+        Through this comparative work, I decided on some key features I was going to implement in my design. I thought that 
+        the warm color palettes of Goodreads and LibraryThing were preferable to the dark color scheme of Storygraph, as they 
+        recalled the pages of books and the wood of libraries. I also wanted to display as much of the functionality of the website as possible,
+         so I decided to display all of the sort and filtering buttons at the top of the website. I also wanted to make sure the aggregator was
+        visible as soon as one loaded the website, so the user could see its purpose immediately. I also wanted the favoriting function to look
+        visually distinct, so I implemented a logo so that the user can ‘heart’ certain items. If I continued to build this website out, the ‘favorites’ 
+        would be an automatically generated category like it is currently, and the user would have to create the other aggregators themselves. That would 
+        comprise the tagging system.
+    </p>
+
+
+<h2><u>Part 2: Implementation</u></h2>  
+
+<p>
+    Last semester, I took a class in which I had to read ten Shakespeare plays and poems, which are a favorite interest of mine. I decided to create
+    a reading-tracker-like website that allowed users to log the complete works of William Shakespeare. I decided to sort the plays by the year they debuted 
+    in ascending order, and filter them in two categories: filtering them by separating them into plays and poems, and then filtering the specific plays by genre:
+    comedy, tragedy, and history. I also included a ‘favorites’ aggregator to display the user's favorite plays. 
+</p>
+
+<p>Following the research I conducted, I wanted to make as many features displayable without the user needing to scroll. However, Shakespeare wrote a great number of plays
+    and poems, and unfortunatly they cannot all be displayed at once without the font being smaller, which would impact accessibility. Additionally, the simplistic look
+of the buttons is also intentional. I enjoyed the older feel of the buttons and menus on goodreads and libraryThing. I made the text and buttons larger as to not impact accessibility,
+but otherwise I wanted to focus on the simplistic and nostalgic design as well. </p>
+
+<p>
+    I highly enjoyed creating this website as it was a way for me to combine my major with my extracurricular interests!
+</p>
+
+</div>
+</body>
+</html>

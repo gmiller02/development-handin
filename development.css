@@ -1,0 +1,55 @@
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Lato, sans-serif;
+}
+
+.header {
+  background-color: #996A46;
+  color: #FDF1D5;
+  padding: 20px;
+  margin: 0;
+}
+
+.content {
+    color: #17252A;
+    padding: 20px;
+    background-color: #FDF1D5;
+    font-size: 18px;
+}
+
+.img {
+    width: 800px; 
+    height: 400px; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+th, td {
+    border: 1px solid #17252A;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    background-color: #fff;
+}
+
+h2 {
+    color: #5C4033;
+}
+
+
+</style>
+</head>
+<body>
